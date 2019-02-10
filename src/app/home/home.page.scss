@@ -1,0 +1,13 @@
+
+.app-popover {
+  ion-select-popover {
+    background: pink;
+    ion-list,
+    ion-list-header,
+    ion-item,
+    ion-radio-group {
+      --background: transparent;
+      background: transparent;
+    }
+  }
+}

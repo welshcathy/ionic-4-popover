@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>
+      Ionic 4 template
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <form [formGroup]="testForm" (ngSubmit)="onSubmit()">
+
+    <ion-select class="app-input" margin-bottom required formControlName="city" placeholder="Choose option"
+      [interfaceOptions]="customPopoverOptions" interface="popover">
+      <ion-select-option value="01" selected>Madison, WI</ion-select-option>
+      <ion-select-option value="02">Austin, TX</ion-select-option>
+      <ion-select-option value="03">Chicago, IL</ion-select-option>
+      <ion-select-option value="04">Seattle, WA</ion-select-option>
+    </ion-select>
+
+
+  </form>
+
+
+</ion-content>
